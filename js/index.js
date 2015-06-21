@@ -27,8 +27,9 @@
 	// 导航栏效果代码结束
 	// 广告效果代码开始
 		//点击效果 
-		var i = $(this).index();
+		var i = 0;
 		$("#adv .contr ul li").click(function(){
+			i = $(this).index();
 			$("#adv .pic ul li").eq(i).fadeIn(300).siblings().fadeOut(300);
 			$(this).addClass("Fcontr").siblings().removeClass("Fcontr");
 		})
