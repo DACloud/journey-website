@@ -145,6 +145,7 @@
 		border:2px solid #e10076;
 		border-top: none;/*上边框取消，同时体现了代码的优先级，越到后面优先级越高*/
 		position: absolute; /*为了让二级菜单悬浮在导航栏之上*/
+		z-index: 9;/*为了让二级菜单悬浮在下面的广告之上，不加的话看不见效果*/
 		left: 0;	
 		top: 49px;
 		display: none;
