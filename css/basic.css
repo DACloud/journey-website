@@ -145,11 +145,12 @@
 		border:2px solid #e10076;
 		border-top: none;/*上边框取消，同时体现了代码的优先级，越到后面优先级越高*/
 		position: absolute; /*为了让二级菜单悬浮在导航栏之上*/
+		z-index: 9;/*为了让二级菜单悬浮在下面的广告之上，不加的话看不见效果*/
 		left: 0;	
 		top: 49px;
 		display: none;
 	}
-	#top .nav .mainNav ul li .hover{
+	#top .nav .mainNav ul li.hover{
 		background-color: #b80064;
 	}
 	#top .nav .mainNav ul li .menue{
@@ -182,4 +183,33 @@
 	}
 	#top .nav .smallNav a{
 		text-decoration: underline;
+	}
+	/*广告样式*/
+	#adv{
+		position: relative;
+	}
+	#adv .pic{
+		width: 100%;
+		height: 420px;
+		overflow:hidden;
+		margin: 0 auto;
+	}
+	#adv .contr{
+		position: absolute;
+		left: 50%;
+		margin-left: -126px;
+		bottom:19px;
+	}
+	#adv .contr ul li{
+		width: 50px;
+		height: 10px;
+		float: left;
+		list-style-type: none;
+		background: black;
+		margin-right: 10px;
+		border: 1px solid white;
+		cursor: pointer;
+	}
+	#adv .contr ul li.Fcontr{
+		background: white;
 	}
