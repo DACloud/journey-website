@@ -17,7 +17,7 @@
 	// 搜索框效果代码结束
 	// 导航栏效果代码开始
 	    //鼠标悬停效果
-		$("#top .nav ul li").hover(function(){
+		$("#top .nav .mainNav ul li").hover(function(){
 			$(this).find(".menue").show();
 			$(this).addClass("hover");
 		},function(){

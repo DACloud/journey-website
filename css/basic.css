@@ -149,7 +149,7 @@
 		top: 49px;
 		display: none;
 	}
-	#top .nav .mainNav ul li .hover{
+	#top .nav .mainNav ul li.hover{
 		background-color: #b80064;
 	}
 	#top .nav .mainNav ul li .menue{
