@@ -1,0 +1,185 @@
+		*{
+		  margin: 0px;
+		  padding: 0px;
+		}
+		#top{
+			width: 100%;
+			height: 149px;
+			background-image: url("../images/headbg.jpg");
+			/*注意看这里的背景图片，背景图片只有一根线！*/
+		}
+		#top .head{
+			width: 1000px;
+			height:30px;
+			margin: 0 auto;
+			font-size: 13px;
+			font-family: "微软雅黑";
+			color:#666;
+			line-height: 30px;
+			/*希望文字在30px的盒子中居中，需要运用line-height属性，值和盒子高度相等就可以了*/
+
+		}
+		/*修改电话号码*/
+		#top .head span{
+			color: #e20076;
+			font-weight: bold;
+			padding: 0 4px;
+			/*使span中的电话号码左右都有一各4px的内边距*/
+		}
+		/*修改登陆 注册的样式*/
+		#top .head a{
+			color: #666;
+			text-decoration: none;
+			font-weight: bold;
+			padding: 0 4px;
+		}
+		/*<a>鼠标悬停后变色*/
+		#top .head a:hover{
+			color:#e20076;
+		}
+		#header{
+			width: 1000px;
+			height: 70px;
+			margin: 0 auto;
+		}
+	#header .banner{
+		width: 221px;
+		height: 44px;
+		float: left;
+		padding-top:10px;
+	}
+	#header .logo{
+		width: 500px;
+		height: 70px;
+		float: left;
+		padding-left: 50px;
+	}
+	#header .search{
+		width: 180px;
+		height: 70px;
+		float: right;
+		position: relative;
+		/*为了让下面的input进行绝对定位，之所以运用绝对定位是为了
+		提高页面兼容性，有的浏览器txt的input会与浏览器有小缝隙，因此通过绝对定位统一两个input，保证统一*/
+	}
+	#header .logo{
+		line-height: 70px;
+		font-size: 16px;
+		font-family: "微软雅黑";
+	}
+	/*控制<a>的样式不能通过.logo*/
+	#header .logo a{
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+	padding:0 25px;
+	/*由于a标签后面用回车进行排列，盒子之间会出现小的空隙。为了消除空隙
+	需要设置一个左浮动。但是这个左浮动会导致a标签的width和height继承父元素的width和height。如果没有这两个属性则不继承*/
+	float: left;
+	}
+	#header .logo a:hover{
+		color: #e20076
+	}
+	/*!!!!搜索栏样式!!!!*/
+	#header .search input.txt{
+		/* 注意！input.txt中间没有空格，有空格不好使*/
+		width: 140px;
+		height:23px;
+		color: #999;
+		font-size: 12px;
+		text-indent: 10px;/*首行缩进*/
+		/*padding-left:10px;用这个也可以*/
+		position: absolute;
+		border: 1px solid #e1e1e1;
+		top: 23px;
+		left: 0;
+	}
+	#header .search input.button{
+		 width: 26px;
+		 height: 25px;
+		 background-image: url("../images/sosoh.jpg");
+		 border:0;/*为了去除边框的立体效果*/
+		 position: absolute;
+		 top: 23px;
+		 left: 141px;
+		 padding-top: 26px;
+	}
+/*导航样式*/
+	#top .nav{
+		width: 1000px;
+		height: 49px;
+		margin: 0 auto;
+	}
+	#top .nav .mainNav{
+		width: 550px;
+		height: 49px;
+		float: left;
+	}
+	#top .nav .smallNav{
+		width: 150px;
+		height: 49px;
+		float: right;
+	}
+	#top .nav .mainNav ul{
+		list-style-type: none;
+	}
+	#top .nav .mainNav ul li{
+		width: 100px;
+		height: 49px;
+		float: left;
+		line-height: 49px;/*文字垂直居中显示*/
+		text-align: center;/*文字水平居中显示*/
+		font-family: "微软雅黑";
+		font-size:14px;
+		position: relative;/*一定要加入相对定位，保证兼容性*/
+	}
+	#top .nav .mainNav ul li a{
+		text-decoration: none; /*修改链接的text-decoration在<a>中*/
+		color: #fff;
+	}
+	/*导航栏二级菜单样式*/
+	#top .nav .mainNav ul li .menue{
+		width:350px;
+		/*不设置height，因为需要自适应*/
+		background:rgba(255,255,255,0.9); 
+		border:2px solid #e10076;
+		border-top: none;/*上边框取消，同时体现了代码的优先级，越到后面优先级越高*/
+		position: absolute; /*为了让二级菜单悬浮在导航栏之上*/
+		left: 0;	
+		top: 49px;
+		display: none;
+	}
+	#top .nav .mainNav ul li .hover{
+		background-color: #b80064;
+	}
+	#top .nav .mainNav ul li .menue{
+		text-align: left;
+		padding: 10px;/*文字和盒子之间有间距*/
+	}
+	#top .nav .mainNav ul li .menue p{
+		line-height: 35px;
+		border-bottom: 1px dotted #ddd;
+	}
+	#top .nav .mainNav ul li .menue p span{
+		font-weight: bold;
+	}
+	#top .nav .mainNav ul li .menue p a{
+		color: #666;/*覆盖之前的#top .nav .mainNav ul li a样式*/
+	}
+	#top .nav .mainNav ul li .menue p a:hover{
+		color:  #b80064;
+	}
+	#top .nav .smallNav{
+		line-height: 49px;
+		font-size: 14px;
+		font-family: "微软雅黑";
+	}
+	#top .nav .smallNav a{
+		text-decoration: none;
+		color: #fff;
+		float: right;
+		padding:0 10px;
+	}
+	#top .nav .smallNav a{
+		text-decoration: underline;
+	}
