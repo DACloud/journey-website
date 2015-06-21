@@ -23,5 +23,23 @@
 		},function(){
 			$(this).find(".menue").hide();
 			$(this).removeClass("hover");
-		})
+		});
 	// 导航栏效果代码结束
+	// 广告效果代码开始
+		//点击效果 
+	// 	var i = $(this).index();
+	// 	$("#adv .contr ul li").click(function(){
+	// 		$("#adv .pic ul li").eq(i).fadeIn(300).siblings().fadeOut(300);
+	// 		$(this).addClass("Fcontr").siblings().removeClass("Fcontr");
+	// 	})
+	// 	//自动播放效果
+	// 	function autoPlay(){
+	// 		i++;
+	// 		if(i>3){
+	// 			i=0
+	// 		}
+	// 		$("#adv .pic ul li").eq(i).fadeIn(300).siblings().fadeOut(300);
+	// 		$("#adv .contr ul li").eq(i).addClass("Fcontr").siblings().removeClass("Fcontr");
+	// 	}
+	// 	setInterval("autoPlay()",5000);
+	// // 广告效果代码结束
