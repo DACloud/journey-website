@@ -137,7 +137,7 @@
 		text-decoration: none; /*修改链接的text-decoration在<a>中*/
 		color: #fff;
 	}
-	/*导航栏二级菜单样式*/
+/*导航栏二级菜单样式*/
 	#top .nav .mainNav ul li .menue{
 		width:350px;
 		/*不设置height，因为需要自适应*/
@@ -184,9 +184,10 @@
 	#top .nav .smallNav a{
 		text-decoration: underline;
 	}
-	/*广告样式*/
+/*广告样式*/
 	#adv{
 		position: relative;
+		/*让下面的contr能够绝对定位*/
 	}
 	#adv .pic{
 		width: 100%;
@@ -212,4 +213,84 @@
 	}
 	#adv .contr ul li.Fcontr{
 		background: white;
+	}
+/*第一部分内容样式*/
+	#part1{
+		width:1000px;
+		height: 460px;
+		margin: 30px auto;
+	}
+	#part1 #part1_L{
+		width:353px;
+		height: 442px;
+		float: left;
+	}
+	#part1 #part1_R{
+		padding: 0 30px;/*为了让两边距离内容有空隙，所以加上左右padding*/
+		width:560px;/*但是加上后会增加div的宽度，让div掉下去，所以要减少div的宽度60px*/
+		height: 442px;
+		float: right;
+		background: url("../images/vl.jpg") no-repeat,
+					url("../images/vr.jpg") no-repeat  right top;
+					/*给同一个div中添加两张背景图片方法！*/
+	}
+	#part1 #part1_R p.title{
+		height:90px;
+		background: url("../images/lxtjbg.jpg") no-repeat top right;
+		border-bottom: 1px dotted #c9c9c9;
+	}
+	/*选项卡样式*/
+	#part1 #part1_R ul.select_but{
+		border-bottom: 1px solid #c9c9c9;
+		height: 32px; /*由于里面的li加了浮动，所以ul是没有高度的，所以要加height*/
+	}
+	#part1 #part1_R ul.select_but li{
+		list-style-type:none;
+		width: 84px;
+		height:32px;
+		float:left;
+		line-height: 32px;
+		/*border:1px solid red;*/
+		text-align: center;
+		font-size: 14px;
+		font-family: "微软雅黑";
+		background: url("../images/lxtjcdbg.jpg") no-repeat bottom;
+		cursor: pointer;
+	}
+	#part1 #part1_R ul.select_but li.hover{
+		background: url("../images/lxtjcdxg.jpg") no-repeat bottom;
+	}
+	/*选项卡内容区样式*/
+	#part1 #part1_R .select_con{
+		height: 300px;
+		/*background: red;*/
+		margin-top: 20px;
+		overflow: hidden;
+	}
+	#part1 #part1_R .select_con .select_content{
+		height: 300px;
+		/*border: 1px blue solid;*/
+	}
+	/*选项卡内容区图片列表项目*/
+	#part1 #part1_R .select_con .select_content ul.select_imgList li{
+		width: 126px;
+		height: 124px;
+		/*border: 1px solid blue;*/
+		float: left;
+		list-style-type:none;
+		margin:0 6px 0 7px; 
+		position: relative;
+		cursor:pointer;
+	}
+	#part1 #part1_R .select_con .select_content ul.select_imgList li p{
+		position: absolute;
+		color: white;
+		bottom: 0;
+		height: 0;
+		line-height: 20px;
+		font-size: 14px;
+		text-align: center;
+		background-color: rgba(225,0,118,0.6);
+		overflow: hidden;
+		cursor:pointer;
 	}

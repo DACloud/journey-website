@@ -43,4 +43,21 @@
 			$("#adv .contr ul li").eq(i).addClass("Fcontr").siblings().removeClass("Fcontr");
 		}
 		setInterval("autoPlay()",5000);
-	// // 广告效果代码结束
+	// 广告效果代码结束
+	// 左侧part1导航(路线推荐)效果开始
+		 $("#part1 #part1_R ul.select_but li").hover(function(){
+		 	var i2=$(this).index();
+		 	// alert(i2);
+		 	$("#part1 #part1_R .select_con .select_content").eq(i2).fadeIn(0).siblings().fadeOut(0);
+		 	$("#part1 #part1_R ul.select_but li").eq(i2).addClass("hover").siblings().removeClass("hover");
+		 	// 问题：为什么不能将函数里面的#part1 #part1_R ul.select_but li换成this？
+		 })
+	// 左侧part1导航效果结束
+	// 内容区图片效果开始
+		$("#part1 #part1_R .select_con .select_content ul.select_imgList li").hover(function(){
+			$(this).find("p").animate({height:"41px"},200);
+		},function(){
+			$(this).find("p").animate({height:"0"},200);
+		})
+	// 内容区图片效果结束
+	
